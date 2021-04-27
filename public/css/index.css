@@ -16,16 +16,17 @@
 /* Hero */
 .hero-container{
     width: 100%;
-    height: 600px;
-    background-color: black;
+    height:auto;
+    background-color: rgba(130, 88, 179, 0.479);
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    padding: 40px 60px;
 }
 
 .hero-container .logo-container{
-    width: 38%;
-    height: 100%;
+    width: 5%;
+    height: 5%;
+    padding: 10px;
 }
 
 .hero-container .logo-container img{
@@ -34,7 +35,7 @@
 }
 
 .hero-container .right-container{
-    width: 58%;
+    width: 90%;
     height: 100%;
 }
 
@@ -43,7 +44,9 @@
     height: 50px;
     display: flex;
     justify-content: space-between;
+    align-items:center ;
     font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 
 .hero-container .right-container .menu ul{
@@ -58,15 +61,15 @@
 }
 
 .hero-container .right-container .menu ul.list-left li{
-    margin-right: 70px;
 }
 
 .hero-container .right-container .menu ul.list-left li a{
     color: white;
+    margin:0 40px;
 }
 
 .hero-container .right-container .menu ul.list-right{
-    padding-right: 20px;
+    
 }
 
 .hero-container .right-container .menu ul.list-right li a{
@@ -77,13 +80,13 @@
     margin-left: 10px;
 }
 
-.hero-container .right-container .video-container{
-    width: 100%;
+.video-container {
+    width: 90%;
+    margin: auto;
     height: 470px;
-    padding: 30px 0px;
 }
 
-.hero-container .right-container .video-container video{
+.video-container video{
     width: 100%;
     height: 100%;
 }
@@ -91,7 +94,7 @@
 /* Seccion diseño */
 .designs-container{
     width: 100%;
-    height: 700px;
+    height: 950px;
     background-image: url('../images/fondos/fondo_triangulo.jpg');
     background-repeat: no-repeat;
     /* background-size: 160% 160%; */
@@ -154,6 +157,60 @@
     font-size: 20px;
     font-family: 'poppinst';
 }
+.designs-container .background-container .trabajos{
+    width: 100%;
+    text-align: center;
+    margin: 6% 0;
+}
+.trabajos h2{
+    padding: 15px;
+    font-size: 35px;
+    width: 40%;
+    margin: auto;
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    line-height: 40px;
+}
+ .trabajos h2.linea {
+     margin-top: 3%;
+    position: relative;
+    z-index: 1;
+    border: none;
+  }
+ .trabajos h2.linea .linea-izquierda::before {
+    border-top: 2px solid #ffffff;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    right: 0;
+    bottom: 0;
+    width: 30%;
+    height: 1px;
+    box-shadow:0px 1px 13px 3px #8b0289;
+    z-index: -1;
+  }
+  .trabajos h2.linea .linea-derecha::before {
+    border-top: 2px solid #ffffff;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 70%;
+    bottom: 0;
+    width: 30%;
+    z-index: -1;
+    height: 1px;
+    box-shadow:0px 1px 13px 3px #5e025c;
+  }
+ .trabajos h2.linea span {
+  
+    background:transparent;
+    padding: 0 15px;
+  }
 
 
 /* Seccion contacto */
@@ -173,15 +230,48 @@
     content: '';
     background: rgba(0, 0, 0, 0.4);
 }
-
+/*  */
 .contact-container .contact-background-container .contact-title{
     font-size: 42px;
     font-weight: 600;
-    width: 80%;
+    width:90%;
+    text-align: center;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+    border: none;
+    text-transform: uppercase;
 }
-
+.contact-background-container h2.contact-title .linea-izquierda::before {
+    border-top: 2px solid #ffffff;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    right: 0;
+    bottom: 0;
+    width: 20%;
+    height: 1px;
+    box-shadow:0px 1px 13px 3px #384cbb;
+    z-index: -1;
+  }
+  .contact-background-container h2.contact-title .linea-derecha::before {
+    border-top: 2px solid #ffffff;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 45%;
+    bottom: 0;
+    width: 20%;
+    z-index: -1;
+    height: 1px;
+    box-shadow:0px 1px 13px 3px #384cbb;
+  }
+  /*  */
 .contact-container .contact-background-container .contact-form-container{
     width: 80%;
     height: 500px;
@@ -224,7 +314,7 @@
 .contact-container .contact-background-container .contact-form-container form .inputs-container .left-side label input{
     width: 100%;
     height: 50px;
-    background-color:#3a3a3a;
+    background-color:rgba(83, 92, 104,0.3);
     color: white;
     font-size: 18px;
     border: none;
@@ -238,12 +328,13 @@
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side{
     width: 50%;
-    height: 100%;
+    height: 60%;
     padding-left: 20px;
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label{
     width: 100%;
+    
 }
 
 .contact-container .contact-background-container .contact-form-container form .inputs-container .right-side label h3{
@@ -258,7 +349,7 @@
     resize: none;
     border: none;
     padding: 10px;
-    background-color:#3a3a3a;
+    background-color: rgba(83, 92, 104,0.3);
     color: white;
     font-size: 18px;
     font-family: 'poppinst';
@@ -278,15 +369,16 @@
 .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact{
     width: 20%;
     height: 100%;
-    background-color: white;
-    color: black;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
+    background-color: rgba(231, 166, 233, 0.733);
+    color: rgb(255, 255, 255);
+    border: 1px solid  rgb(231, 166, 233);
+    /* border-right: 1px solid white;
     border-top: 1px solid black;
-    border-left: 1px solid black;
+    border-left: 1px solid black; */
     font-size: 28px;
     font-weight: 600;
     cursor: pointer;
+    font-style: italic;
 }
 
 .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact:hover{
@@ -382,7 +474,7 @@
         padding-top: 140px;
     }
 
-    .hero-container .right-container .video-container{
+   .video-container{
         height: auto;
     }
 

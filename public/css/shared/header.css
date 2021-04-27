@@ -59,22 +59,24 @@ body textarea:hover{
 
 .cabecera-container{
     width: 100%;
-    height: 100px;
-    background-color: transparent;
-    padding: 0px 90px;
+    height: auto;
     font-family: 'Poppins', sans-serif;
+    background-color: rgba(130, 88, 179, 0.479);
 }
 
 .cabecera-container .cabecera{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     height: 100%;
+    text-transform: uppercase;
 }
 
 .cabecera-container .cabecera .logo-container{
-    width: 80px;
-    height: 80px;
+    width: 5%;
+    height: 5%;
+    padding: 10px;
 }
 
 .cabecera-container .cabecera .logo-container a img{
@@ -83,7 +85,7 @@ body textarea:hover{
 }
 
 .cabecera-container .cabecera .list-container{
-    width: 70%;
+    width: 90%;
 }
 
 .cabecera-container .cabecera .list-container .menu{
@@ -99,15 +101,19 @@ body textarea:hover{
     display: flex;
     list-style: none;
 }
-
+.cabecera-container .cabecera .list-container .menu ul li{
+    font-size: 22px;
+    color: #fff;
+}
 .cabecera-container .cabecera .list-container .menu ul li a{
     font-size: 22px;
     font-weight: 400;
     color: white;
+    margin:0 40px;
 }
 
 .cabecera-container .cabecera .list-container .menu ul.list-left li{
-    margin-right: 70px;
+   
 }
 
 .cabecera-container .cabecera .list-container .menu ul.list-left li.hidden-desk{
@@ -135,7 +141,7 @@ body textarea:hover{
     color: red;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:800px){
     .cabecera-container{
         padding: 0 0px;
         position: fixed;

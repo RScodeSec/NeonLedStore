@@ -1,0 +1,29 @@
+.contenedor{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    min-height: 60vh;
+    .subtitulo{
+        padding: 10px 0;
+        width: 100%;
+        background-color: #2b333b;
+        h3,p{
+            text-align: center;
+            color: #fff;
+           
+        }
+        h3{
+            font-size: 26px;
+            font-weight: 300;
+        }
+        p{
+            margin: auto;
+            font-weight: 100;
+            font-size: 18px;
+            width: 40%;
+            text-align: center;
+        }
+        .minimo{
+            text-align: center;
+        }
+    }
+}

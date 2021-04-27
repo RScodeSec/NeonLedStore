@@ -1,14 +1,17 @@
         <div class="cabecera-container">
             <header class="cabecera">
+                
                 <figure class="logo-container">
                     <a href="../index.php"><img src="../public/images/logo.webp" alt=""></a>
                 </figure>
                 <div class="list-container">
                     <nav class="menu">
                         <ul class="list-left">
-                            <li><a href="../inicio.php">Inicio</a></li>
-                            <li><a href="tienda.php">Tienda</a></li>
-                            <li><a href="../inicio.php#Contact">Contacto</a></li>
+                            <li><a href="../inicio.php">Inicio</a>|</li>
+                            <li><a href="tienda.php">Tienda</a>|</li>
+                            <li><a href="servicios.php">Servicios</a>|</li>
+                            <li><a href="tienda.php">Nosotros</a>|</li>
+                            <li><a href="#Contact">Contacto</a></li>
                             <?php
                             if (!isset($_SESSION["cli_estado"])) { ?>
                             <li class="hidden-desk">

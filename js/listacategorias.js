@@ -26,7 +26,7 @@ function ListaTendencia() {
         var cadena = "";
         if (data.length > 0) {
             for (var i = 0; i < data.length; i++) {
-                cadena +="<article class='article-card'><a href='producto.php?pro="+data[i]["id"]+"'><img src='"+data[i]["imagen"]+"' alt=''></a><h3>"+data[i]["nombre"]+"</h3></article>";
+                cadena +="<article class='article-card'><a href='producto.php?pro="+data[i]["id"]+"'><img src='"+data[i]["imagen"]+"' alt=''></a><h3>"+data[i]["nombre"]+"</h3><div><span  class='color-div'></span></div><p>S/.350.00</p></article>";
             }
             $(".articles-section").append(cadena);
         }

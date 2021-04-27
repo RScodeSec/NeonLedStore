@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
     <link rel="stylesheet" href="../public/css/shared/header.css">
-    <link rel="preload" href="../public/css/shared/tienda.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="../public/css/style/estilo.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="preload" href="../public/css/shared/footer.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <!--<link rel="stylesheet" href="../public/css/shared/tienda.css">
     <link rel="stylesheet" href="../public/css/shared/footer.css">-->
@@ -15,12 +15,22 @@
 <body>
     <div class="page-container">
             <?php include_once "menu.php"; ?>
+            <figure class="shop-title">
+                        <!--<img src="../public/images/animados/imagen_larga.jpg" alt="">-->
+            </figure>
             <main class="main">
                 <aside class="menu-left">
-                    <figure class="shop-title-mobile">
-                        <!--<img src="../public/images/animados/imagen_larga.jpg" alt="">-->
-                    </figure>
-                    <h3 class="menu-title">Categorías</h3>
+                    <!-- <figure class="shop-title-mobile">
+                        <img src="../public/images/animados/imagen_larga.jpg" alt="">
+                    </figure>   -->
+   
+                   <div class="desplazador-opciones">
+                    <h3 >Filtros</h3>
+                    <h3 class="menu-title">Categoría <span>+</span></h3>
+                    <h3 class="menu-title">Precio <span>+</span></h3>
+                    <h3 class="menu-title">Color <span>+</span></h3>
+                    <h3 >Tamaño <span>+</span></h3>
+                   </div>
                     <nav class="menu-categories">
                         <ul class="contenedor_categorias">
                         <!--<li><a href="">Cintas</a></li>
@@ -37,9 +47,7 @@
                 </aside>
                 
                 <section class="shop">
-                    <figure class="shop-title">
-                        <!--<img src="../public/images/animados/imagen_larga.jpg" alt="">-->
-                    </figure>
+                   
                     <div class="articles-section">
                         <?php if (isset($_SESSION["cli_estado"])) { ?>
                             <div class="link-container">

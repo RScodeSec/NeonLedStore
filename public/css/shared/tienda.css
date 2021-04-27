@@ -1,14 +1,25 @@
+.shop-title{
+    width: 100%;
+    text-align: center;
+}
 .main{
-    display: flex;
-    color: white;
-    padding-right: 90px;
-    padding-left: 90px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    /* padding-right: 90px;
+    padding-left: 90px; */
 }
 
 /* Menu izquierdo */
 .main .menu-left{
-    width: 20%;
-    padding-top: 150px;
+    width: 90%;
+    margin:0 auto;
+    background-color: #000;
+    color: #ffff;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding-top: 150px; */
 }
     .main .menu-left .shop-title-mobile{
         display: none;
@@ -21,7 +32,9 @@
     }
     .main .menu-left .menu-categories ul{
         list-style: none;
+        display: none;
     }
+  
     .main .menu-left .menu-categories ul li{
         margin-bottom: 5px;
         min-width: 150px;
@@ -40,28 +53,28 @@
 
 /* Seccion Tienda */
 .main .shop{
-    padding-top: 50px;
-    width: 80%;
-    display: flex;
+    /* padding-top: 50px; */
+    width: 100%;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
 }
-.main .shop .shop-title,
+/* .main .shop .shop-title,
 .main .menu-left .shop-title-mobile{
     width: 300px;
     height: 70px;
-}
-.main .shop .shop-title img,
+} */
+/* .main .shop .shop-title img,
 .main .menu-left .shop-title-mobile img{
     width: 100%;
     height: 100%;
-}
+} */
     .main .shop .articles-section{
         width: 100%;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        padding-top: 120px;
+        /* padding-top: 120px; */
     }
     .main .shop .articles-section .link-container{
         background-color: white;
