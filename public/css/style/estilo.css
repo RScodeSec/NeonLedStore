@@ -13,13 +13,37 @@
     margin: 0 auto;
     background-color: #000;
     color: #ffff;
-    height: 60vh;
+    height: auto;
+    overflow: hidden;
+    max-height: 350px;
     display: flex;
-    align-items: center;
-    justify-content: center;
     /* padding-top: 150px; */ }
     .main .menu-left .desplazador-opciones {
-      width: 90%; }
+      overflow-y: scroll;
+      width: 90%;
+      margin: 5%;
+      /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+      /* Cambiamos el fondo cuando esté en active */
+      /* Cambiamos el fondo cuando esté en active o hover */ }
+      .main .menu-left .desplazador-opciones::-webkit-scrollbar {
+        width: 8px;
+        /* Tamaño del scroll en vertical */
+        height: 8px;
+        /* Tamaño del scroll en horizontal */
+        display: none; }
+      .main .menu-left .desplazador-opciones::-webkit-scrollbar-thumb {
+        background: #ccc;
+        border-radius: 4px; }
+      .main .menu-left .desplazador-opciones::-webkit-scrollbar-thumb:hover {
+        background: #b3b3b3;
+        box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2); }
+      .main .menu-left .desplazador-opciones::-webkit-scrollbar-thumb:active {
+        background-color: #999999; }
+      .main .menu-left .desplazador-opciones::-webkit-scrollbar-track {
+        background: #e1e1e1;
+        border-radius: 4px; }
+      .main .menu-left .desplazador-opciones::-webkit-scrollbar-track:hover, .main .menu-left .desplazador-opciones::-webkit-scrollbar-track:active {
+        background: #d4d4d4; }
       .main .menu-left .desplazador-opciones h3 {
         display: flex;
         justify-content: space-between;
@@ -28,21 +52,26 @@
         border-top: 2px solid #fff;
         padding: 10px 0;
         font-weight: 200; }
-    .main .menu-left .menu-categories ul {
-      list-style: none;
-      display: none; }
-    .main .menu-left .menu-categories ul li {
-      margin-bottom: 5px;
-      min-width: 150px;
-      max-width: 220px;
-      padding-left: 30px; }
-    .main .menu-left .menu-categories ul li:hover {
-      background-color: white;
-      color: black; }
-    .main .menu-left .menu-categories ul li a {
-      color: inherit;
-      font-size: 28px;
-      font-family: 'poppinst'; }
+      .main .menu-left .desplazador-opciones .categoria-tienda {
+        width: 100%;
+        transition: 1s ease-in; }
+        .main .menu-left .desplazador-opciones .categoria-tienda .ver-menu:active {
+          transform: scale(1.4); }
+        .main .menu-left .desplazador-opciones .categoria-tienda .menu-categories ul {
+          list-style: none;
+          display: none; }
+        .main .menu-left .desplazador-opciones .categoria-tienda .menu-categories ul li {
+          margin-bottom: 5px;
+          min-width: 150px;
+          max-width: 220px;
+          padding-left: 30px; }
+        .main .menu-left .desplazador-opciones .categoria-tienda .menu-categories ul li:hover {
+          background-color: white;
+          color: black; }
+        .main .menu-left .desplazador-opciones .categoria-tienda .menu-categories ul li a {
+          color: inherit;
+          font-size: 28px;
+          font-family: 'poppinst'; }
   .main .shop {
     /* padding-top: 50px; */
     width: 100%;
@@ -138,7 +167,8 @@
     /* Menu izquierdo */
     /* Sección tienda */ }
     .main .menu-left {
-      height: 50vh;
+      margin-bottom: 5%;
+      height: auto;
       min-height: 40vh; }
       .main .menu-left .menu-categories {
         display: flex; }
@@ -254,7 +284,6 @@
     margin: 0 10%;
     gap: 10px; }
     .contenedor .productos-info .img-texto {
-      border: 1px solid red;
       width: 70%;
       margin: auto;
       position: relative; }
@@ -262,10 +291,19 @@
         width: 100%;
         height: 300px; }
       .contenedor .productos-info .img-texto p {
-        top: 50%;
+        top: 40%;
         font-size: 20px;
         color: #fff;
         position: absolute; }
+      .contenedor .productos-info .img-texto button {
+        width: 100%;
+        color: #ffffff;
+        font-size: 18px;
+        outline: none;
+        min-height: 50px;
+        margin: 10% 0;
+        border: 1px solid #cc5dcf;
+        background-color: #cc5dcf; }
 
 .carrusel {
   width: 100%;

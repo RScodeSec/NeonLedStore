@@ -27,24 +27,35 @@
    
                    <div class="desplazador-opciones">
                     <h3 >Filtros</h3>
-                    <h3 class="menu-title">Categoría <span>+</span></h3>
-                    <h3 class="menu-title">Precio <span>+</span></h3>
-                    <h3 class="menu-title">Color <span>+</span></h3>
-                    <h3 >Tamaño <span>+</span></h3>
+                    <div class="categoria-tienda">
+                        <h3 class="menu-title">Categoría <span class="ver-menu">+</span></h3>
+                        <nav class="menu-categories">
+                            <ul class="contenedor_categorias">
+                            <!--<li><a href="">Cintas</a></li>
+                                <li><a href="">Cómics</a></li>
+                                <li><a href="">Deportes</a></li>
+                                <li><a href="">Emojis</a></li>
+                                <li><a href="">Videojuegos</a></li>
+                                <li><a href="">Personajes</a></li>
+                                <li><a href="">Música</a></li>
+                                <li><a href="">Frases</a></li>
+                                <li><a href="">Festividades</a></li> -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="categoria-precio">
+                        <h3 class="menu-title">Precio <span>+</span></h3>
+                    </div>
+                    <div class="categoria-color">
+                         <h3 class="menu-title">Color <span>+</span></h3>
+                    </div>
+                    <div class="categoria-tamaño">
+                        <h3 >Tamaño <span>+</span></h3>
+                    </div>
+                   
+                   
                    </div>
-                    <nav class="menu-categories">
-                        <ul class="contenedor_categorias">
-                        <!--<li><a href="">Cintas</a></li>
-                            <li><a href="">Cómics</a></li>
-                            <li><a href="">Deportes</a></li>
-                            <li><a href="">Emojis</a></li>
-                            <li><a href="">Videojuegos</a></li>
-                            <li><a href="">Personajes</a></li>
-                            <li><a href="">Música</a></li>
-                            <li><a href="">Frases</a></li>
-                            <li><a href="">Festividades</a></li> -->
-                        </ul>
-                    </nav>
+                    
                 </aside>
                 
                 <section class="shop">
@@ -70,6 +81,7 @@
     <script type="text/javascript" src="../js/listacategorias.js" ></script>
     <script type="text/javascript" src="../public/js/menu.js" defer></script>
     <script type="text/javascript" src="../public/js/slider.js" defer></script>
+    <script type="text/javascript" src="../public/js/tienda/ControladorCategorias.js" ></script>
     <script rel="preconnect" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous" defer></script>
 </body>
 </html>

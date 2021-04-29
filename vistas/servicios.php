@@ -26,9 +26,21 @@
                     <h2 class="linea"><span class="linea-izquierda"></span>Servicios<span class="linea-derecha"></span></h2>
                 </div>
                 <div class="productos-info">
-                    <div class="img-texto"><img src="../public/images/fondos/fondo_s.jpg" alt=""><p class="info">Lorem ipsum dolor sit amet.</p></div>
-                    <div class="img-texto"><img src="../public/images/fondos/fondo_s.jpg" alt=""><p class="info">Lorem ipsum dolor sit amet.</p> </div>
-                    <div class="img-texto"><img src="../public/images/fondos/fondo_s.jpg" alt=""><p class="info">Lorem ipsum dolor sit amet.</p> </div>
+                    <div class="img-texto">
+                        <img src="../public/images/fondos/fondo_s.jpg" alt="">
+                        <p class="info">Lorem ipsum dolor sit amet.</p>
+                        <button>Mas Información</button>
+                    </div>
+                    <div class="img-texto">
+                        <img src="../public/images/fondos/fondo_s.jpg" alt="">
+                        <p class="info">Lorem ipsum dolor sit amet.</p>
+                        <button>Mas Información</button>
+                     </div>
+                    <div class="img-texto">
+                        <img src="../public/images/fondos/fondo_s.jpg" alt="">
+                        <p class="info">Lorem ipsum dolor sit amet.</p>
+                        <button>Mas Información</button>
+                     </div>
                 </div>
 
 

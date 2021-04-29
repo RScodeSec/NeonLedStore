@@ -82,7 +82,6 @@
         gap: 10px;
 
         .img-texto{
-            border: 1px solid red;
             width: 70%;
             margin: auto;
             position: relative;
@@ -91,10 +90,20 @@
                height: 300px;
             }
             p{
-                top: 50%;
+                top: 40%;
                 font-size: 20px;
                 color: #fff;
                 position: absolute;
+            }
+            button{
+                width: 100%;
+                color: #ffffff;
+                font-size: 18px;
+                outline: none;
+                min-height: 50px;
+                margin: 10% 0;
+                border: 1px solid #cc5dcf;
+                background-color:#cc5dcf ;
             }
         }
     }

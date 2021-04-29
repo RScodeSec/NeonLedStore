@@ -12,13 +12,47 @@
         margin:0 auto;
         background-color: #000;
         color: #ffff;
-        height: 60vh;
+        height:auto;
+        overflow: hidden;
+        max-height: 350px;
         display: flex;
-        align-items: center;
-        justify-content: center;
+        // align-items: center;
+        // justify-content: center;
         /* padding-top: 150px; */
         .desplazador-opciones{
+            overflow-y: scroll;
             width: 90%;
+            margin: 5%;
+            &::-webkit-scrollbar {
+                width: 8px;     /* Tamaño del scroll en vertical */
+                height: 8px;    /* Tamaño del scroll en horizontal */
+                display: none;
+            }
+            &::-webkit-scrollbar-thumb {
+                background: #ccc;
+                border-radius: 4px;
+            }
+            
+            /* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: #b3b3b3;
+                box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+            }
+            
+            /* Cambiamos el fondo cuando esté en active */
+            &::-webkit-scrollbar-thumb:active {
+                background-color: #999999;
+            }
+            &::-webkit-scrollbar-track {
+                background: #e1e1e1;
+                border-radius: 4px;
+            }
+            
+            /* Cambiamos el fondo cuando esté en active o hover */
+            &::-webkit-scrollbar-track:hover,
+            &::-webkit-scrollbar-track:active {
+              background: #d4d4d4;
+            }
             h3{
                 display: flex;
                 justify-content: space-between;
@@ -29,27 +63,36 @@
                 font-weight: 200;
                 // padding-left: 30px;
             }
-        }
-        .menu-categories ul{
-            list-style: none;
-            display: none;
+            .categoria-tienda{
+                
+                width: 100%;
+                transition: 1s ease-in;
+                .ver-menu:active{
+                    transform: scale(1.4);
+                }
+                .menu-categories ul{
+                    list-style: none;
+                    display: none;
+                }
+               
+                .menu-categories ul li{
+                    margin-bottom: 5px;
+                    min-width: 150px;
+                    max-width: 220px;
+                    padding-left: 30px;
+                }
+                .menu-categories ul li:hover{
+                    background-color: white;
+                    color: black;
+                }
+                .menu-categories ul li a{
+                    color: inherit;
+                    font-size: 28px;
+                    font-family: 'poppinst';
+                }
+            }
         }
       
-        .menu-categories ul li{
-            margin-bottom: 5px;
-            min-width: 150px;
-            max-width: 220px;
-            padding-left: 30px;
-        }
-        .menu-categories ul li:hover{
-            background-color: white;
-            color: black;
-        }
-        .menu-categories ul li a{
-            color: inherit;
-            font-size: 28px;
-            font-family: 'poppinst';
-        }
     }
     .shop{
         /* padding-top: 50px; */
@@ -174,7 +217,8 @@
         grid-template-columns: repeat(1,1fr);
     /* Menu izquierdo */
     .menu-left{
-        height: 50vh;
+        margin-bottom: 5%;
+        height:auto;
         min-height: 40vh;
         .menu-categories{
             display: flex;
