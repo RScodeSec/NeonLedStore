@@ -15,6 +15,7 @@
 <body>
     <div class="page-container">
             <?php include_once "menu.php"; ?>
+            <?php include '../vistas/reusable/carrusel2.php'  ?>
             <figure class="shop-title">
                         <!--<img src="../public/images/animados/imagen_larga.jpg" alt="">-->
             </figure>
@@ -68,6 +69,7 @@
     <script rel="preconnect" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../js/listacategorias.js" ></script>
     <script type="text/javascript" src="../public/js/menu.js" defer></script>
+    <script type="text/javascript" src="../public/js/slider.js" defer></script>
     <script rel="preconnect" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous" defer></script>
 </body>
 </html>
