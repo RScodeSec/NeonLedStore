@@ -1,7 +1,7 @@
 <div class="carrusel">
 
 <div class="img-izquierda">
-  <img src="public/images/productos/musica/Audifono.webp" alt="">
+  <img src="public/images/productos/comics/batman.webp" alt="">
 </div>
 <div class="container-slider">
    <div class="slider" id="slider">
@@ -43,7 +43,7 @@
 </div>
 
 <div class="img-derecha">
-    <img src="public/images/productos/musica/Audifono.webp" alt="">
+    <img src="public/images/productos/comics/batman.webp" alt="">
 </div>
 
 <div class="titulo-carrusel">       

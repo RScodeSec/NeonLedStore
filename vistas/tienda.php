@@ -81,7 +81,11 @@
                 </aside>
                 
                 <section class="shop">
-                   
+                   <div class="buscar-recomendado">
+                       <button>Buscar</button>
+                       <h3>Ordenar por</h3>
+                       <button>Recomendado</button>
+                   </div>
                     <div class="articles-section">
                         <?php if (isset($_SESSION["cli_estado"])) { ?>
                             <div class="link-container">
