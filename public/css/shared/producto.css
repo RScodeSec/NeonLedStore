@@ -142,7 +142,7 @@ body {
     width: 100%;
     height: 100px;
     
-    padding: 0px 80px;
+    padding: 0px 20px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -275,7 +275,7 @@ body {
 }
 
 .cabecera-container .cabecera .list-container .menu ul.list-right {
-    padding-right: 31px;
+    padding-right:11px;
 }
 
 .order {

@@ -28,29 +28,43 @@
                 <div class="productos-info">
                     <div class="img-texto">
                         <img src="../public/images/fondos/fondo_s.jpg" alt="">
-                        <p class="info">Lorem ipsum dolor sit amet.</p>
+                        <p class="info">Fabricación de luces Neón Led para tu hogar y negocio</p>
                         <button>Mas Información</button>
                     </div>
                     <div class="img-texto">
                         <img src="../public/images/fondos/fondo_s.jpg" alt="">
-                        <p class="info">Lorem ipsum dolor sit amet.</p>
+                        <p class="info">Ilumina tus eventos con luces Neón Led</p>
                         <button>Mas Información</button>
                      </div>
                     <div class="img-texto">
                         <img src="../public/images/fondos/fondo_s.jpg" alt="">
-                        <p class="info">Lorem ipsum dolor sit amet.</p>
+                        <p class="info">Rediseño de tu espacio o negocio</p>
                         <button>Mas Información</button>
                      </div>
                 </div>
 
+                <div class="titulo-servicios titulo-trabajo">
+                    <h2 class="linea">NUESTROS TRABAJOS</h2>
+                </div>
+                
+                <?php include '../vistas/reusable/carrusel2.php'  ?>
+
+                <div class="publicidad-servico">
+                    <h3>¿Qué esperas para decorar tu hogar o tienda con nosotros?</h3>
+                    <p>¡Ponte en contacto con nosotros!</p>
+                    <div class="colaboradores">
+                        <img src="../public/images/logo.webp" alt="">
+                        <img src="../public/images/logo.webp" alt="">
+                    </div>
+                </div>
 
 
             </div>
             
         <?php include_once "footer.php"; ?>
     </div>
+    <?php include '../vistas/reusable/footerCarrusel.php'  ?>
     <script rel="preconnect" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script type="text/javascript" src="../js/listacategorias.js" ></script>
     <script type="text/javascript" src="../public/js/menu.js" defer></script>
     <script rel="preconnect" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous" defer></script>
 </body>
