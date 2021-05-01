@@ -148,8 +148,8 @@ body textarea:hover{
         justify-content: center;
         background-size: cover;
         background-color: gray;
-        background-blend-mode: multiply;
-        cursor: none;
+      
+       cursor:auto;
     }
     
     .cabecera-container{
@@ -248,6 +248,9 @@ body textarea:hover{
 
 
 @media screen and (max-width:425px){
+    body{
+       cursor: none;
+    }
     .cabecera-container .cabecera .list-container .menu{
         width: 100%;
     }

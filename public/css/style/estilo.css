@@ -294,6 +294,11 @@
         min-width: 180px; }
     .main .shop {
       width: 100%; }
+      .main .shop .buscar-recomendado {
+        grid-template-columns: repeat(1, 1fr); }
+        .main .shop .buscar-recomendado h3 {
+          width: 80%;
+          margin: auto; }
       .main .shop .shop-title {
         display: none; }
       .main .shop .articles-section {

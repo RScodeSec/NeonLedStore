@@ -162,6 +162,8 @@
     text-align: center;
     margin: 6% 0;
 }
+
+/* TITULO CON BORDES */
 .trabajos h2{
     padding: 15px;
     font-size: 35px;
@@ -459,6 +461,10 @@
     .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact{
         width: 30%;
     }
+    .trabajos h2{
+        font-size: 25px;
+        width: 90%;
+    }
 
 }
 
@@ -537,6 +543,8 @@
     .contact-container .contact-background-container .contact-form-container form .form-button-container .button-contact{
         width: 45%;
     }
+   
+    
 }
 
 .cabecera-container{

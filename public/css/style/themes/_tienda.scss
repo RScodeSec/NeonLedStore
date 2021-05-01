@@ -388,7 +388,13 @@
     .shop{
         width: 100%;
     
-       
+        .buscar-recomendado{   
+            grid-template-columns: repeat(1,1fr);
+            h3{
+                width: 80%;
+                margin: auto;
+            }
+        }
         .shop-title{
             display: none;
         }
