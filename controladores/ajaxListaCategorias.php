@@ -22,6 +22,8 @@ $categorias = new ModeloCategorias();
                     "id" 	 =>$reg->pro_id,
                     "nombre" =>$reg->pro_nombre,
                     "imagen" =>$reg->pro_imagen,
+                    "color1" =>$reg->color1,
+                    "precio" =>$reg->pro_precio,
                 );
             }
             echo json_encode($data);
@@ -33,6 +35,51 @@ $categorias = new ModeloCategorias();
             while ($reg=$rspta->fetch_object()){
                 $data[]=array(
                     "tendencia" =>$reg->cat_imagen,
+                );
+            }
+            echo json_encode($data);
+        break;
+
+        case 'prodsearch':
+            $rspta=$categorias->ListarProdSearched($_GET['serch']);
+            $data=Array();
+            while ($reg=$rspta->fetch_object()){
+                $data[]=array(
+                    "id" 	 =>$reg->pro_id,
+                    "nombre" =>$reg->pro_nombre,
+                    "imagen" =>$reg->pro_imagen,
+                    "color1" =>$reg->color1,
+                    "precio" =>$reg->pro_precio,
+                );
+            }
+            echo json_encode($data);
+        break;
+
+        case 'flitercolor':
+            $rspta=$categorias->filterByColor($_GET['color']);
+            $data=Array();
+            while ($reg=$rspta->fetch_object()){
+                $data[]=array(
+                    "id" 	 =>$reg->pro_id,
+                    "nombre" =>$reg->pro_nombre,
+                    "imagen" =>$reg->pro_imagen,
+                    "color1" =>$reg->color1,
+                    "precio" =>$reg->pro_precio,
+                );
+            }
+            echo json_encode($data);
+        break;
+
+        case 'btnRecomd':
+            $rspta=$categorias->orderByRecomend();
+            $data=Array();
+            while ($reg=$rspta->fetch_object()){
+                $data[]=array(
+                    "id" 	 =>$reg->pro_id,
+                    "nombre" =>$reg->pro_nombre,
+                    "imagen" =>$reg->pro_imagen,
+                    "color1" =>$reg->color1,
+                    "precio" =>$reg->pro_precio,
                 );
             }
             echo json_encode($data);

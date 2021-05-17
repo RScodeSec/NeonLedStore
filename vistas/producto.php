@@ -26,6 +26,10 @@
                 <p id="precio"></p>
                 <span>Tamaño:</span>
                 <p id="tamano"></p>
+                <span>Color:</span>
+                <select  id="coloravailable">
+                    <option value="1">red</option>
+                </select>
                 <?php if (isset($_SESSION["cli_estado"])) { ?>
                 <!--datos para agrega al carro-->
                 <input type="hidden" id="cliente" value="<?php echo $_SESSION["cli_id"] ?>">

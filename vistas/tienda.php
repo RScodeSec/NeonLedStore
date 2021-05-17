@@ -58,16 +58,16 @@
                     <div class="categoria-color">
                          <h3 class="menu-title">Color <span class="ver-color">+</span></h3>
                          <nav class="color">
-                            <ul class="contenedor-color">
-                            <li><a href=""><p class="bola bola-1"></p></a></li>
-                                <li><a href=""><p class="bola bola-2"></p></a></li>
-                                <li><a href=""><p class="bola bola-3"></p></a></li>
-                                <li><a href=""><p class="bola bola-4"></p></a></li>
-                                <li><a href=""><p class="bola bola-5"></p></a></li>
-                                <li><a href=""><p class="bola bola-6"></p></a></li>
-                                <li><a href=""><p class="bola bola-7"></p></a></li>
-                                <li><a href=""><p class="bola bola-8"></p></a></li>
-                                <li><a href=""><p class="bola bola-9"></p></a></li>
+                            <ul class="contenedor-color" id="contenedor-color">
+                                <li><p class="bola bola-1" data-id="red"></p></li>
+                                <li><p class="bola bola-2" data-id="2"></p></li>
+                                <li><p class="bola bola-3" data-id="3"></p></li>
+                                <li><p class="bola bola-4" data-id="4"></p></li>
+                                <li><p class="bola bola-5" data-id="5"></p></li>
+                                <li><p class="bola bola-6" data-id="6"></p></li>
+                                <li><p class="bola bola-7" data-id="7"></p></li>
+                                <li><p class="bola bola-8" data-id="8"></p></li>
+                                <li><p class="bola bola-9" data-id="9"></p></li>
                             </ul>
                         </nav>
                     </div>
@@ -82,11 +82,15 @@
                 
                 <section class="shop">
                    <div class="buscar-recomendado">
-                       <button>Buscar</button>
+                       <!--<button>Buscar</button>-->
+                       <!--<form id="search_prod">-->
+                            <input  class="textSearch" id="textSearch" type="text" placeholder="Buscar" style="background:black; color:white;">
+                       <!--</form>-->
                        <h3>Ordenar por</h3>
-                       <button>Recomendado</button>
+                       <button class="recomendado">Recomendado</button>
+                       
                    </div>
-                    <div class="articles-section">
+                    <div class="articles-section" id="articles-section">
                         <?php if (isset($_SESSION["cli_estado"])) { ?>
                             <div class="link-container">
                                 <a href="personaliza.php">Personaliza tu diseño</a>
@@ -99,7 +103,28 @@
                             <h3>Título 1</h3>
                         </article>-->
                      </div>
-                </section>
+                </section >
+                                    
+                <template id="template-items">
+                    <article class='article-card'>
+                        <a href='producto.php?pro=1'>
+                            <img src="imagen" alt=''>
+                        </a>
+                        <h3>Nombre</h3>
+                        <div>
+                            <span  class='color-div' style='background: red'></span>
+                        </div>
+                        <p>S/.350.00</p>
+                    </article>                     
+                </template>
+
+                <template id="template-catlist">
+                    <li>
+                        <a href='categorias.php?categoria=1'>Animado</a>
+                    </li>
+                </template>
+
+
             </main>
         <?php include_once "footer.php"; ?>
     </div>
@@ -107,6 +132,7 @@
     <script rel="preconnect" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="../js/listacategorias.js" ></script>
     <script type="text/javascript" src="../public/js/menu.js" defer></script>
+    <script type="text/javascript" src="../js/filter.js"></script>
     <script rel="preconnect" src="https://kit.fontawesome.com/c702fce202.js" crossorigin="anonymous" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.0/js/ion.rangeSlider.min.js"></script>
 	<script>
